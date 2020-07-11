@@ -27,9 +27,9 @@ class Proxmark3 < Formula
 
     system "make", "clean"
     if build.with? "blueshark"
-      system "make", "all", "PLATFORM=#{ENV['HOMEBREW_PROXMARK3_PLATFORM']}", "PLATFORM_EXTRAS=BTADDON"
+      system "make", "all", "PLATFORM=PM3OTHER STANDALONE=LF_4100RSWB"
     else
-      system "make", "all", "PLATFORM=#{ENV['HOMEBREW_PROXMARK3_PLATFORM']}"
+      system "make", "all", "PLATFORM=PM3OTHER STANDALONE=LF_4100RSWB"
     end
 
     system "make", "install", "PREFIX=#{prefix}", "PLATFORM=PM3OTHER STANDALONE=LF_4100RSWB"
