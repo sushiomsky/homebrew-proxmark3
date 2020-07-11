@@ -22,7 +22,7 @@ class Proxmark3 < Formula
     ENV.deparallelize
 
     if not ENV.has_key?('HOMEBREW_PROXMARK3_PLATFORM')
-      ENV['HOMEBREW_PROXMARK3_PLATFORM'] = 'PM3RDV4'
+      ENV['HOMEBREW_PROXMARK3_PLATFORM'] = 'PM3OTHER'
     end
 
     system "make", "clean"
