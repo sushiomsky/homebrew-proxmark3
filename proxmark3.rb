@@ -5,9 +5,9 @@ class Proxmark3 < Formula
   sha256 "db93c2d3b9b7f477aca5628ed0906d9dba9c1999080452b24c601f38ab5b5226"
   head do
     if ENV.has_key?('HOMEBREW_TRAVIS_COMMIT')
-      url "https://github.com/RfidResearchGroup/proxmark3.git", :branch => "#{ENV['HOMEBREW_TRAVIS_BRANCH']}", :revision => "#{ENV['HOMEBREW_TRAVIS_COMMIT']}"
+      url "https://github.com/sushiomsky/proxmark3.git", :branch => "#{ENV['HOMEBREW_TRAVIS_BRANCH']}", :revision => "#{ENV['HOMEBREW_TRAVIS_COMMIT']}"
     else
-      url "https://github.com/RfidResearchGroup/proxmark3.git"
+      url "https://github.com/sushiomsky/proxmark3.git"
     end
   end
   
